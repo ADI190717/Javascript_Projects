@@ -1,0 +1,96 @@
+/* ===== Background Blur ===== */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("background.png") no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(6px);
+  z-index: -1;
+}
+
+/* ===== General Styling ===== */
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+
+.power-scouter,
+.fusion-dance,
+.gravity-chamber,
+.solarFlare,
+.finalFlash
+{
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+
+/* ===== Headings ===== */
+h3 {
+  margin-top: 0;
+  font-weight: bold;
+  color: white;
+}
+
+/* ===== Buttons ===== */
+button {
+  background: linear-gradient(45deg, #ff0080, #7928ca);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ff0080;
+}
+
+/* ===== Inputs ===== */
+input {
+  padding: 6px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+/* ===== Solar Flare Special Layout ===== */
+.solar-flare .content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+/* Power Bar */
+
+/* Add to style.css for better appearance */
+.finalFlash{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+#power-bar {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon Ball Cosmic Training</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background overlay for blur -->
+  <div class="background"></div>
+
+  <div class="container">
+
+    <!-- Problem 1 -->
+    <div class="power-scouter">
+      <h3>Problem 1: The Power Scouter</h3>
+      <h3 id="heading">Power Level: 100</h3>
+      <button id="btn">Power up!</button>
+    </div>
+
+    <!-- Problem 2 -->
+    <div class="fusion-dance">
+      <h3>Problem 2: The Fusion Dance</h3>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName">
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName">
+
+      <button type="submit" id="fuse-btn">Fuse</button>
+      <p id="fused-name"></p>
+    </div>
+
+    <!-- Problem 3 -->
+    <div class="gravity-chamber">
+      <h3>Problem 3: The Gravity Chamber Control</h3>
+      <p id="currentGravity">Current Gravity: 10x</p>
+      <button id="increasedGravity">Increase Gravity</button>
+      <button id="decreasedGravity">Decrease Gravity</button>
+    </div>
+    
+    <!-- Problem 4: The Solar Flare Technique -->
+    <div id="sf" class="solarFlare">
+      <h3>Problem 4: The Solar Flare Technique</h3>
+      <img id="solarFlair" src="Untitled.jpg" alt="Solar Flare"/>
+      <button type="submit" id="solarflare-btn">Use Solar Flair!</button>
+    </div>
+    
+    <!-- Problem 5: Final Flash Charge Meter -->
+    <div class="finalFlash">
+
+      <h3>Problem 5: Final Flash Charge Meter</h3>
+      <div id="power-bar" style="height: 50px; width: 0%; background-color: gold; border-radius: 8px; transition: width 0.3s;"></div>
+      <button id="ff">Charge!</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
